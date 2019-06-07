@@ -7,7 +7,7 @@ class ChuckJokes
   end
 
   def replace_name(f_name, l_name)
-    joke = ChuckNorris::JokeFinder.get_joke(first_name: "#{f_name}", last_name: "#{f_name}")
+    joke = ChuckNorris::JokeFinder.get_joke(first_name: f_name, last_name: l_name)
     puts joke.joke
   end
 
