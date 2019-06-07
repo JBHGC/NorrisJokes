@@ -1,10 +1,6 @@
 require 'chuck_norris'
 
 class ChuckJokes
-  def help
-
-  end
-
   def get_joke_by_id(id)
     joke = ChuckNorris::JokeFinder.find_joke(id)
     puts joke.joke
